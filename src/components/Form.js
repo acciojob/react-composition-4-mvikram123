@@ -30,7 +30,7 @@ const Form=()=>{
                 <input type="text" onChange={(e)=>setUser({...user,password:e.target.value})}></input><br />
             </form>
         </div>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
         </div>
     )
 }
