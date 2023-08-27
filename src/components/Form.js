@@ -21,7 +21,7 @@ const Form=()=>{
     return(
         <div>
             <div>
-            <form onSubmit={user => signup(user)}>
+            <form onSubmit={(e,user) => signup(e,user)}>
                 <label for="name">Name </label>
                 <input type="text" onChange={(e)=>setUser({...user,name:e.target.value})}></input><br />
                    <label for="name">Email</label>
