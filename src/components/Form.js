@@ -10,18 +10,19 @@ const Form=()=>{
 
     let{name,email,password}=user
 
- const signup=(e,user)=>{
-    e.preventDefault();
-    setUser();
+ const signup=(currentUser)=>{
+    // e.preventDefault();
+    // setUser();
+    console.log(currentUser);
+
    
  }
- console.log(user);
-
+ 
 
     return(
         <div>
             <div>
-            <form onSubmit={(e,user) => signup(e,user)}>
+            <form onSubmit={signup(user)}>
                 <label htmlFor="name">Name </label>
                 <input type="text" onChange={(e)=>setUser({...user,name:e.target.value})}></input><br />
                    <label htmlFor="name">Email</label>
