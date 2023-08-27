@@ -10,9 +10,9 @@ const Form=()=>{
 
     let{name,email,password}=user
 
- const signup=(e)=>{
+ const signup=(e,user)=>{
     e.preventDefault();
-    setUser(...user);
+    setUser();
    
  }
  console.log(user);
@@ -21,7 +21,7 @@ const Form=()=>{
     return(
         <div>
             <div>
-            <form onSubmit={signup}>
+            <form onSubmit={user => signup(user)}>
                 <label for="name">Name </label>
                 <input type="text" onChange={(e)=>setUser({...user,name:e.target.value})}></input><br />
                    <label for="name">Email</label>
