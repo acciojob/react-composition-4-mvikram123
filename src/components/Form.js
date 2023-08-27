@@ -22,11 +22,11 @@ const Form=()=>{
         <div>
             <div>
             <form onSubmit={(e,user) => signup(e,user)}>
-                <label for="name">Name </label>
+                <label htmlFor="name">Name </label>
                 <input type="text" onChange={(e)=>setUser({...user,name:e.target.value})}></input><br />
-                   <label for="name">Email</label>
+                   <label htmlFor="name">Email</label>
                 <input type="text" onChange={(e)=>setUser({...user,email:e.target.value})}></input><br />
-                   <label for="name">Password </label>
+                   <label htmlFor="name">Password </label>
                 <input type="text" onChange={(e)=>setUser({...user,password:e.target.value})}></input><br />
             </form>
         </div>
